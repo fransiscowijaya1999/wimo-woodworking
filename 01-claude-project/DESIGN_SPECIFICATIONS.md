@@ -209,9 +209,9 @@
 ### Calculated stress check
 - Vertical load per column: ~50 kg (200kg ÷ 4 columns)
 - Contact area at joint: 24 cm² (4 × 6 cm column footprint)
-- Stress: 0.02 MPa
+- Stress: 0.20 MPa
 - Limit (Meranti perpendicular to grain): 5-7 MPa
-- Safety factor: ~250×
+- Safety factor: ~25×
 - **Verdict**: vertical compression is NOT a concern
 
 ---
