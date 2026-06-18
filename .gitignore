@@ -1,0 +1,49 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-*
+*~
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+
+# Office temp files
+~$*
+.~lock.*
+
+# Sensitive purchase records (if you keep receipts with personal info)
+# Uncomment if needed:
+# 04-vendors/purchase-receipts/
+
+# Large media files (consider git-lfs instead, see notes)
+# Uncomment if photos get large:
+# 03-photos/**/*.jpg
+# 03-photos/**/*.png
+# 03-photos/**/*.heic
+
+# Private notes (if you want to keep some files local-only)
+# Add prefix "private-" to filenames you don't want tracked
+private-*
+*-private.md
+
+# Compiled or generated files
+*.pdf.lock
+*.docx.lock
+
+# FreeCAD backup files (if you use FreeCAD later)
+*.FCStd1
+*.FCBak
+
+# AutoCAD backup files
+*.bak
+*.dwl
+*.dwl2
