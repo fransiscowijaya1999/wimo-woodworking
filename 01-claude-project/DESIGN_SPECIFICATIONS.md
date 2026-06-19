@@ -285,6 +285,20 @@ Separate sub-design for the heaviest items (sprockets):
 - Heavy drawers on lower levels only
 - Internal trays for clear plastic compartment organization
 
+### Desk-side stationary drawer organizer (standalone — NOT on the modular shelf)
+Small free-standing tool/stationery box that sits inside a 28cm-tall × 30cm-deep
+shelf opening beside the work table. Light-duty; no M8 bolt/adapter interface.
+- External: ~24cm W × 25cm D × 20cm H (fits opening with ~8cm height, ~5cm depth spare)
+- 3 drawers, all shallow (items lie flat). Internal usable ~17cm W × 22cm D:
+  - Drawer 1 (4cm): pens + refills, cutter + blades
+  - Drawer 2 (5cm): PH2 screwdriver, 7" combination pliers
+  - Drawer 3 (4cm): receipts (8×13cm) + stamps (8×7cm laid flat)
+- Slides: 200mm zinc-plated ball-bearing, full-extension (humidity-proof, fast access).
+  Load ~1kg/drawer is far below rating; width grew from 20→24cm to absorb slide clearance.
+- Build: carpentry workshop (clean dados + precise slide mounting). Scrap plywood.
+- Climate: seal wood; silica-gel packet in the paper/stamp drawer.
+- Diagram: `02-designs/desk-drawer-organizer.svg`
+
 ---
 
 ## 15. Open Design Questions
