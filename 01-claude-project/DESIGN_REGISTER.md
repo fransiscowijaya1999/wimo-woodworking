@@ -113,11 +113,11 @@ numbers live.
   - Standalone & light-duty → ignore the M8 system entirely.
   - Width grew **20 → 24 cm specifically to absorb slide clearance** — don't shrink it
     back without re-checking slide fit.
-  - **Build from scrap plywood** (anti-consumerism + humidity stability beats solid wood
-    here): 12 mm carcass, **glued dados**, sealed edges. Plywood's dimensional stability
-    keeps slide clearance constant year-round in Kalimantan humidity.
+  - **12 mm plywood** (anti-consumerism + humidity stability beats solid wood here),
+    **glued dados**, all edges sealed. Plywood's dimensional stability keeps slide
+    clearance constant year-round in Kalimantan humidity.
   - Seal all wood; **silica-gel packet in the receipts/stamps drawer**.
-- **Open questions:** see §15 (pin material/thickness in §14).
+- **Open questions:** none (material pinned in §14).
 
 ---
 

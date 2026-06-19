@@ -295,7 +295,9 @@ shelf opening beside the work table. Light-duty; no M8 bolt/adapter interface.
   - Drawer 3 (4cm): receipts (8×13cm) + stamps (8×7cm laid flat)
 - Slides: 200mm zinc-plated ball-bearing, full-extension (humidity-proof, fast access).
   Load ~1kg/drawer is far below rating; width grew from 20→24cm to absorb slide clearance.
-- Build: carpentry workshop (clean dados + precise slide mounting). Scrap plywood.
+- Build: carpentry workshop (glued dados + precise slide mounting).
+- Material: 12mm plywood (scrap where available), all cut edges sealed. Plywood chosen for
+  dimensional stability — keeps slide clearance constant year-round in Kalimantan humidity.
 - Climate: seal wood; silica-gel packet in the paper/stamp drawer.
 - Diagram: `02-designs/desk-drawer-organizer.svg`
 
@@ -310,7 +312,7 @@ shelf opening beside the work table. Light-duty; no M8 bolt/adapter interface.
 - [ ] Wall anchor hardware selection (anchor type depends on wall material)
 - [ ] Treatment plan for Meranti Putih (varnish? wood preservative? for humidity)
 - [ ] Confirm piston-kit box dimensions with supplier before finalizing cubby size (12×10×9cm)
-- [ ] Pin desk-organizer material in §14 (currently "scrap plywood"; proposed 12mm plywood, sealed edges)
+- [x] Pin desk-organizer material in §14 — resolved: 12mm plywood, all edges sealed
 
 ---
 
