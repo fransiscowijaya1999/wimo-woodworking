@@ -309,6 +309,8 @@ shelf opening beside the work table. Light-duty; no M8 bolt/adapter interface.
 - [ ] T-bracket vs L-bracket final count and locations
 - [ ] Wall anchor hardware selection (anchor type depends on wall material)
 - [ ] Treatment plan for Meranti Putih (varnish? wood preservative? for humidity)
+- [ ] Confirm piston-kit box dimensions with supplier before finalizing cubby size (12×10×9cm)
+- [ ] Pin desk-organizer material in §14 (currently "scrap plywood"; proposed 12mm plywood, sealed edges)
 
 ---
 
