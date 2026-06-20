@@ -312,6 +312,9 @@ shelf opening beside the work table. Light-duty; no M8 bolt/adapter interface.
 - [ ] Wall anchor hardware selection (anchor type depends on wall material)
 - [ ] Treatment plan for Meranti Putih (varnish? wood preservative? for humidity)
 - [ ] Confirm piston-kit box dimensions with supplier before finalizing cubby size (12×10×9cm)
+- [ ] Mechanic tool cart (§17): confirm 3-way corner brackets are available locally; else fall back to 2× 90° L-brackets per bottom corner
+- [ ] Mechanic tool cart (§17): confirm the 4 lane widths (A/B/C/D) against the actual wrench/ratchet/driver lengths & counts before cutting the dividers
+- [ ] Mechanic tool cart (§17): caster purchase (100mm, 50kg, 2 rigid + 2 swivel-brake) and plank / 8mm rubber-mat sourcing
 - [x] Pin desk-organizer material in §14 — resolved: 12mm plywood, all edges sealed
 
 ---
@@ -325,5 +328,132 @@ The following SVG blueprints have been generated:
 - Dado joint detail
 - T-plate detail
 - Rolling sprocket unit summary
+- Mobile mechanic tool cart (front elevation + top plan + 3-way corner-bracket detail) — `02-designs/mechanic-tool-cart.svg`
 
 These are reference documents, not part of this spec file.
+
+---
+
+## 17. Mobile Mechanic Tool Cart (Workshop side — D8)
+
+Standalone rolling tool bin for the **open-air workshop** (under canopy), **shared between
+mechanics**. **NOT** part of the modular M8 shelf system — it rolls freely, no bolt/adapter
+interface. Designed for an **impact/abuse, toss-it-back workflow**.
+
+**Mechanic-built from owner-supplied materials (owner directive 2026-06-20).** No carpentry
+shop, no joinery: the workshop mechanics assemble it from **wood planks + off-the-shelf
+brackets + bolts/nuts/screws**, all easy to find; the owner buys the materials. Form factor
+simplified to a single **open plank bin, 60 × 45 × 20 cm** (box height; casters extra), riding
+directly on **4 casters**.
+
+### Concept & governing principle
+- **One shallow open bin, split into 4 fixed tool-category lanes** — toss-tolerant, no
+  drawers/slides to bend, breathes in humidity. It is shared, so nobody re-racks tools neatly;
+  the lanes are kept **generously oversized** so a tossed tool still lands in the right one.
+- **Tip resistance comes free from the low form.** The bin floor sits ~13 cm up (on the
+  casters), the box is only 20 cm tall, so the **loaded CG ≈ 20 cm** over a 60 × 45 cm
+  footprint. Fore-aft tip threshold `a/g ≥ b/h_cg ≈ 0.19/0.20 ≈ 0.95 g` → it **slides before
+  it tips**. No push handle or leg frame needed (those were for the earlier 50 cm-deck idea,
+  now retired).
+- **Compliant impact surface.** Tools land in the bottom → an **8 mm rubber mat** on the floor
+  cuts peak thrown-tool force ~6× vs bare wood and stops the bottom plank splitting
+  (impact-energy method, `REFERENCE_DATA.md` §3.4). Rigidity in the frame, compliance at the
+  contact.
+
+### Overall dimensions
+| Parameter | Value | Notes |
+|---|---|---|
+| Box W × D × H | 60 × 45 × 20 cm | open top; box height only (casters extra) |
+| Deck height | ~13 cm | bin floor above ground = caster height |
+| Rim height | ~33 cm | deck 13 + 20 cm box |
+| Loaded CG height | ~20 cm | trivially tip-stable |
+| Caster | 100 mm wheel | + plate |
+
+### Structure & materials (plank box, no joinery)
+- **Wood planks (~2 cm)**, butt-jointed, held by brackets + screws — no dados/rabbets. Use the
+  **thickest plank for the bottom** (it takes the thrown-tool impact and carries the caster bolts).
+- **Cleats** (~2 × 2 cm strips) screwed inside the lower edge of all four walls; the bottom
+  board rests on them so impact is carried in **shear by the cleat**, not by bracket screws.
+- **Caster blocks** (4× solid offcut ~8 × 8 × 4 cm) under the bottom corners give the caster
+  bolts real wood to bite — don't bolt casters through a single plank alone.
+- **Internal dividers double as anti-racking ribs** (the *Fixed compartments* below): braced
+  to the long walls, they keep the box from parallelogramming — compartments and carcase
+  reinforce each other.
+- Already-owned Meranti planks are fine here (framing/compression; the mat keeps impact off the wood).
+- **Seal all wood incl. cut edges** (open-air humidity).
+
+### Corner brackets (the 3-axis question)
+- **The 4 bottom corners are true 3-axis corners** (two walls + the floor meet at a point) →
+  **4× 3-way corner brackets**, one flange screwed to each of the three faces. A single L or a
+  flat brace **can't restrain the third (vertical) axis** — see `REFERENCE_DATA.md` §6.
+  ⚠️ **Source-check 3-way brackets locally first**; if unavailable, substitute **2× 90°
+  L-brackets per corner** (one on the vertical wall-to-wall edge, one tying a wall to the floor).
+- **The 4 top corners** (vertical edge, 2-axis) → **4× 90° L-brackets** to keep the rim from splaying.
+- Zinc-plated/galvanized, 2–3 mm steel; buy ~10 % spares.
+- **Why no edge-parallel L-bracing** (considered and declined): the bottom seams are already
+  **continuously braced by the cleats**, the rim is **tied by the 3 full-height dividers**, and
+  racking is resisted by that triangulation/diaphragm — **not** by straps lying along an edge
+  (`REFERENCE_DATA.md` §6). Adding edge L's would be redundant and just punches more split-prone
+  holes in soft Meranti. Corners + cleats + dividers already triangulate the box.
+
+### Wheels
+- **100 mm hard rubber/PU**, non-marking. **2 rigid + 2 swivel-with-brake**, **50 kg+ each**
+  (cheap, robust, rolls over workshop grit; far above the ~9 kg/caster static load).
+- Swivel is **correct here** — the cart steers around the workshop. This is **NOT** the
+  fixed-axis rolling-sprocket-unit case (§4 Error 5).
+- Caster bolts: **M8 × 40 + nut + 2 washers** (one fender washer into wood for plank creep),
+  4 per caster; **nyloc / thread-locker** against rolling shock.
+
+### Fixed compartments (A/B/C/D)
+Three **full-height (~20 cm) dividers** run **front-to-back** (so ~35 cm tools lie flat),
+splitting the ~56 cm internal width into four category lanes:
+
+| Lane | Tool group | Nominal width |
+|---|---|---|
+| A | Wrenches (combination/open/ring) | ~16 cm |
+| B | Sockets & ratchets | ~16 cm |
+| C | Screwdrivers & hex/Allen keys | ~12 cm |
+| D | Pliers, cutters & grips | ~12 cm |
+
+- Dividers ~1.5 cm plank, 41 × 20 cm; usable lane ≈ 1.5 cm less where a divider lands. Keep
+  lanes oversized for toss-tolerance — **don't cut tool-shaped slots**. Confirm widths against
+  the actual tool sets before cutting (see §15).
+- **Bracing — and why brackets, not just screws:** tie **each divider end to the front/back
+  wall with a small 90° L-bracket** (6 total). The flanges land on **face grain** of both
+  boards (strong); a screw driven straight into the divider's **end grain would be weak**.
+  Also screw **up through the bottom plank** into each divider's lower edge.
+- **Structural bonus:** braced this way the dividers are **internal ribs** that tie the long
+  60 cm front and back walls together, resisting racking and wall-bow.
+- Each lane gets its own **8 mm rubber mat** strip (the bottom mat, cut to the lanes).
+
+### Load & stability check
+- **Caster load:** tools (one shallow bin) ≈ 20–25 kg + cart ≈ 12 kg = **~35 kg ÷ 4 ≈
+  9 kg/caster** static. 50 kg casters → **SF ≈ 5× static**.
+- **Tip:** loaded CG ~20 cm, half-wheelbase ~19 cm fore-aft → tips only past ~0.95 g; it
+  slides first. Tipping is a non-issue at this height — that is why the low bin was chosen.
+- **Dividers:** add ~1–2 kg low in the box → no change to CG (~20 cm) or the numbers above;
+  net effect is extra racking stiffness, not a stability penalty.
+
+### Bill of materials (cut list, ≈ 2 cm planks)
+| Item | Spec | Qty |
+|---|---|---|
+| Bottom panel | 60 × 45 cm (thickest stock) | 1 |
+| Front / back wall | 60 × 20 cm | 2 |
+| Side wall | 41 × 20 cm (fits between front/back) | 2 |
+| Cleat strip | ~2 × 2 cm: 56 cm ×2, 41 cm ×2 | 4 |
+| Caster block | ~8 × 8 × 4 cm solid offcut | 4 |
+| Divider (full height) | 41 × 20 cm, ~1.5 cm plank | 3 |
+| 3-way corner bracket | bottom corners, 2–3 mm zinc/galv | 4 (+spares) |
+| 90° L-bracket | top corners, 2–3 mm zinc/galv | 4 (+spares) |
+| Small 90° L-bracket | divider ends → front/back wall | 6 (+spares) |
+| Caster | 100 mm, 50 kg+, 2 rigid + 2 swivel-brake | 4 |
+| Wood screws | 4 × 30–40 mm structural (not drywall) | ~100–120 |
+| Caster bolt set | M8 × 40 + nut + 2 washers (1 fender), nyloc/locker | 16 |
+| Rubber mat | 8 mm, ~56 × 41 cm total, cut into 4 lane strips | 1 |
+| Exterior varnish/sealer | all wood + cut edges | as needed |
+
+### Climate
+- Open-air canopy = wetter than the parts shop → seal all wood incl. edges, galvanized/zinc
+  brackets & fasteners. No silica gel (open bin, no enclosed precision tools).
+
+### Status: `designed`. Diagram: `02-designs/mechanic-tool-cart.svg`.

@@ -119,6 +119,41 @@ numbers live.
   - Seal all wood; **silica-gel packet in the receipts/stamps drawer**.
 - **Open questions:** none (material pinned in §14).
 
+## D8 — Mobile mechanic tool cart (workshop side)
+- **Intent:** Rolling open-bin tool cart shared by the mechanics in the open-air workshop.
+  **Not** on the modular shelf — it rolls freely; no M8 interface.
+- **Status:** `designed`.
+- **Spec:** §17 · diagram `02-designs/mechanic-tool-cart.svg`.
+- **Identifier:** 60×45×20 cm **open plank bin on 4 casters** (deck ~13 cm, rim ~33 cm),
+  **4 fixed braced compartments** (A/B/C/D), **mechanic-built from owner-supplied materials**.
+  No carpentry, no shelves.
+- **Why / hard constraints:**
+  - **Mechanic-built, no joinery (owner directive 2026-06-20).** Wood planks + off-the-shelf
+    brackets + bolts/nuts/screws only; owner supplies materials. Keep it a **single shallow
+    bin** — don't add a second level or revert to a plywood carcase / leg frame / push handle.
+  - **Tip stability is free at this height.** Loaded CG ~20 cm over a 60×45 footprint → it
+    **slides before it tips** (~0.95 g fore-aft). That is *why* the bin is low; don't raise it.
+  - **3-axis bottom corners → 3-way corner brackets** (one flange per face); a single L or flat
+    brace can't catch the vertical axis. Fallback: 2× 90° L per corner. Top corners → 90° L.
+    ⚠️ source-check 3-way brackets first. See `REFERENCE_DATA.md` §6.
+  - **Cleats carry the bottom in shear** (the impact path); **caster blocks** give the caster
+    bolts real wood — don't bolt casters through a lone plank.
+  - **8 mm rubber mat on the bin floor** — tools land there; cuts peak force ~6×
+    (`REFERENCE_DATA.md` §3.4). Use the thickest plank for the bottom.
+  - **4 fixed compartments = 3 full-height dividers**, braced with a small 90° L-bracket at
+    each end (face grain, not end-grain screws — `REFERENCE_DATA.md` §6). They double as
+    **anti-racking ribs**. Keep lanes **generously oversized** so it stays a toss cart — don't
+    cut tool-shaped slots.
+  - **No edge-parallel L-bracing** (considered & declined): redundant with the continuous
+    cleats + the dividers, which already triangulate the box. Edge straps don't resist racking
+    and add split-prone holes in soft Meranti. If more rigidity is ever wanted, add a top
+    perimeter lip or corner gussets — not edge straps.
+  - **Swivel casters are correct here** (the cart steers) — do **not** apply the all-fixed
+    sprocket-unit rule. ⚠️ §4 Error 5 (that was a single-axis unit; this one is not).
+  - Open-air canopy → wetter than the parts shop: **seal all wood incl. edges**, galvanized/
+    zinc hardware, **brakes** (shared + abuse).
+- **Open questions:** see §15 (3-way bracket availability vs L-fallback; caster & plank/mat sourcing).
+
 ---
 
 *Maintenance: one card per design; when a design is added or a decision changes, update

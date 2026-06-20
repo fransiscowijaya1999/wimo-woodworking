@@ -100,6 +100,23 @@ Packing efficiency for random loose bolts in a container: **~45%**
 Safe load = Slider rating × 0.7 (cyclic use safety factor)
 ```
 
+### 3.4 Impact (thrown / dropped tool) load — energy method
+```
+E      = m · g · h     (impact energy, J)
+v      = √(2 g h)      (impact velocity, m/s)
+F_avg  ≈ E / d         (average force over stopping distance d)
+```
+Peak force scales as **1/d** → a *softer* landing surface (larger `d`) lowers peak force;
+a *rigid* surface raises it. This is the opposite of static-load intuition.
+
+**Worked**: m = 1.5 kg (heavy wrench), h = 0.5 m (moderate toss) → E = 1.5×9.81×0.5 = **7.36 J**.
+- Bare plywood, d ≈ 1.5 mm: F ≈ 7.36 / 0.0015 = **4,900 N (~500 kgf)** — concentrated on a
+  tool edge → splits Meranti, fatigues joints.
+- 8–10 mm rubber mat, d ≈ 10 mm: F ≈ 7.36 / 0.010 = **740 N (~75 kgf)** → **~6× reduction**.
+
+**Design rule**: in any throw/drop zone use a **rigid frame + compliant impact surface**
+(rubber mat). Applied in `DESIGN_SPECIFICATIONS.md` §17 (mechanic tool cart).
+
 ---
 
 ## 4. Common Errors To Avoid (project history)
@@ -178,6 +195,33 @@ Standard safety factors used in this project:
 
 Choose based on which orientation has full wood contact for all arms.
 
+### When to use a 3-way corner bracket
+- A **true 3-axis box corner** — three boards meeting at a point (two walls + a floor), e.g.
+  the bottom corners of the mechanic tool bin (§17). One flange screws to each of the three
+  mutually perpendicular faces, tying all three boards with a single part.
+- A single L-bracket or a flat corner brace **cannot restrain the third (out-of-plane) axis**.
+  If 3-way brackets aren't available, substitute **2× 90° L-brackets per corner** placed on
+  two different edges, so all three axes are caught between them.
+- Pair with a **cleat** under the floor board so impact is carried in shear by wood, not by
+  the bracket screws.
+
+### Bracing an internal divider that butts into a wall
+- A divider butting into the face of a wall is **end-grain meeting face-grain**. Screwing
+  straight into the divider's **end grain holds poorly** (low withdrawal strength).
+- Tie it with a **small 90° L-bracket at each end** instead — both flanges then land on
+  **face grain** (one on the divider face, one on the wall face), which holds well.
+- Bonus: dividers braced to both long walls act as **internal anti-racking ribs**, stiffening
+  the whole box (cf. the back panel / side partitions on the main shelf, §8 of the spec).
+
+### Edge bracing — what actually helps (and what doesn't)
+- A **continuous cleat** (or glue line) along a seam beats **discrete L-brackets spaced along
+  the same edge** — it distributes load over the full length instead of at a few points. Don't
+  add edge brackets where a cleat already runs (redundant, and extra holes split soft wood).
+- **Edge-parallel brackets do not resist racking.** Racking (a box parallelogramming) is beaten
+  by **triangulation or a diaphragm**: internal ribs/dividers, a panel (back/bottom), diagonal
+  **corner gussets**, or a **top perimeter lip** that frames an open rim. Reach for those before
+  adding straps along straight edges.
+
 ---
 
 ## 7. Climate Adaptation (Kalimantan Tropical)
@@ -244,6 +288,20 @@ MAX_LOAD_PER_LEVEL = 25 kg
 MAX_LOAD_TOTAL = 200 kg
 BOLT_SIZE = M8
 SAFETY_FACTOR_SLIDER = 0.7
+
+# Mobile mechanic tool cart (D8 — §17) — SIMPLE PLANK BIN ON CASTERS
+CART_W = 60 cm
+CART_D = 45 cm
+CART_BOX_H = 20 cm           # plank box height (open top), casters extra
+CART_DECK_H = 13 cm          # bin floor above ground = caster height
+CART_RIM_H  = 33 cm          # deck 13 + 20 cm box
+CART_CG_H   = 20 cm          # loaded centre of gravity (trivially tip-stable)
+CART_CASTER_WHEEL = 100 mm
+CART_CASTER_RATING = 50 kg   # each, 2 rigid + 2 swivel-brake
+CART_MAT_THICKNESS = 8 mm    # rubber impact liner on the bin floor
+CART_LANES = 4               # fixed tool-category compartments (A/B/C/D)
+CART_DIVIDER_COUNT = 3       # full-height dividers between the 4 lanes
+CART_DIVIDER_H = 20 cm       # full height (flush with the rim)
 ```
 
 Reference these constants when calculating to ensure consistency with the existing design.
